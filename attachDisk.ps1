@@ -1,0 +1,1 @@
+az vm disk attach --resource-group "recovery" --vm-name "recoveryvm" --name "recoverydisk"

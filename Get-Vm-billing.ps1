@@ -1,0 +1,2 @@
+﻿$vmid=(Get-AzVM -Name hangentos8 -ResourceGroupName HANGCENTOS8-RG).Id
+Get-AzConsumptionUsageDetail -InstanceId $vmid -StartDate "2023-05-10" -EndDate "2023-05-18" | Select-Object -Property UsageStart, UsageEnd, MeterName, PretaxCost

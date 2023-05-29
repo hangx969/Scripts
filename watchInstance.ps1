@@ -1,0 +1,1 @@
+az vmss list-instances --resource-group "vmss-1"  --name "myvmss" --output table

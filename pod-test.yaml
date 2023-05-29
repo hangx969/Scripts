@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: centos
+spec:
+   containers:
+     - name: centos
+       image: dockerhub.azk8s.cn/library/centos:latest
+       command: ["/bin/sh"]
+       args: ["-c", "while true; do echo hello; sleep 10;done"]
